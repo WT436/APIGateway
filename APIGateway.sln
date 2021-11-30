@@ -12,7 +12,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "compose", "compose", "{5A52
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_One", "API_One\API_One.csproj", "{2AC870B5-8916-4B65-97DF-68CA112E5BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Two", "API_Two\API_Two.csproj", "{5A4BB251-7392-4D00-A784-A78BE69F7E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Two", "API_Two\API_Two.csproj", "{5A4BB251-7392-4D00-A784-A78BE69F7E1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "envoy", "envoy", "{81CEEEE5-FAA9-4867-8F35-127B90F4CFF5}"
+	ProjectSection(SolutionItems) = preProject
+		envoy\Dockerfile = envoy\Dockerfile
+		envoy\envoy.yaml = envoy\envoy.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ocelot", "ocelot", "{ABB36994-93A5-43DB-9CFB-6221B5CC3FC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "envoyDocument", "envoyDocument", "{C1E29BD8-8929-4EDF-A2F8-5E035323CB9D}"
+	ProjectSection(SolutionItems) = preProject
+		envoyDocument\SettingAndRunning.md = envoyDocument\SettingAndRunning.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

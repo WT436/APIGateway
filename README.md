@@ -1,6 +1,9 @@
 "# APIGatewayEnvoy" 
 
+Cấu hình căn bản 1 project sử dụng docker căn bản không dùng VM
+
 Run Project 
+
 di chuyển vào folder chưa file Dockerfile
 
 docker build -t NAME_IMAGE .
@@ -58,4 +61,14 @@ docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://
 Kiểm tra : https://localhost:8001/WeatherForecast
 ```
 
-Giới thiệu một chút về envoy proxy
+Giới thiệu một chút về envoy proxy : 
+
+Envoy là một proxy nguồn mở được tạo tại Lyft. Khi thế giới đang hướng tới một kiến trúc microservice phân tán, các develop quan sát thấy những khó khăn trong việc vận hành các hoạt động trong hai lĩnh vực chính:
+
+ - Kết nối mạng
+ - Khả năng quan sát
+Cách phổ biến nhất mà proxy Envoy được triển khai ngày nay là cùng với các ứng dụng dưới dạng một sidecar.
+
+Về phần giới thiệu thì đơn giản vậy thôi! cái này tôi cũng đang học nên chưa thể full document được, Nhưng về mặt hình thức và triển khai thì có thể nói nó cũng la lá giống ocelot mà thôi vậy nên tôi sẽ chuyển hướng nó vào thư mục document tại folder này luôn.
+
+Thank you watching!
