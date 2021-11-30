@@ -3,7 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "compose", "compose", "{5A52201F-E338-4365-8B81-4F5D418D5811}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yaml = docker-compose.yaml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_One", "API_One\API_One.csproj", "{2AC870B5-8916-4B65-97DF-68CA112E5BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Two", "API_Two\API_Two.csproj", "{5A4BB251-7392-4D00-A784-A78BE69F7E1A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC870B5-8916-4B65-97DF-68CA112E5BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC870B5-8916-4B65-97DF-68CA112E5BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC870B5-8916-4B65-97DF-68CA112E5BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC870B5-8916-4B65-97DF-68CA112E5BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4BB251-7392-4D00-A784-A78BE69F7E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4BB251-7392-4D00-A784-A78BE69F7E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4BB251-7392-4D00-A784-A78BE69F7E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4BB251-7392-4D00-A784-A78BE69F7E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
