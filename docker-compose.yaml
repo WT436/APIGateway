@@ -1,15 +1,16 @@
 version: '3'
 services:
   envoygateway:
-    build: Envoy/
-    ports:
-      - "2901:2901"
-      - "3100:3100"
-      - "3201:3201"
+    # folder chứa file docker
+    build: envoy/
+    ports: # chỉ định các cổng
+      - "2900:2900" # cổng gốc
+      - "3100:3100" # cổng truy cấp http thường và chuyển trang
+      - "3200:3200" # cổng https
     volumes:
-      - ./Envoy/envoy.yaml:/etc/envoy/envoy.yaml
-      - ./Envoy/https.crt:/etc/ssl/certs/https.crt
-      - ./Envoy/key.pem:/etc/ssl/certs/key.pem
+      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml # chuyên gia đọc lệnh 
+      - ./envoy/https.crt:/etc/ssl/certs/https.crt # chứng chỉ https
+      - ./envoy/key.pem:/etc/ssl/certs/key.pem # chứng chỉ https
   apione:
     build: API_One/
     ports:
@@ -23,7 +24,7 @@ services:
       - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
       - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
 
-  api_two:
+  apitwo:
     build: API_Two/
     ports:
       - "8082:80"

@@ -9,16 +9,16 @@ namespace API_Two.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class AeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Freezing2", "Bracing2", "Chilly2", "Cool2", "Mild2", "Warm2", "Balmy2", "Hot2", "Sweltering2", "Scorching2"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<AeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public AeatherForecastController(ILogger<AeatherForecastController> logger)
         {
             _logger = logger;
         }
